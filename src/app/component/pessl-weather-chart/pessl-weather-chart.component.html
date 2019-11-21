@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <canvas id="bar"></canvas>
+        <select [(ngModel)]="lessThanOrGreaterThan">
+          <option value='lessThan'>Less Than</option>
+          <option value='greaterThan'>Greater Than</option>
+        </select>
+        <input [(ngModel)]="filterRange"><br><br>
+        <button class="button" (click)="callFilter(filterRange)">Apply</button>
+    </div>
+</div>
